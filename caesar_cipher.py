@@ -1,7 +1,6 @@
 def caesar_cipher(text: str, shift: int):
     """
     Encrypts the given text using the Caesar cipher.
-
     :param text: The text to encrypt.
     :param shift: The number of positions to shift each letter by.
     """
