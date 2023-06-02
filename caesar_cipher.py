@@ -7,8 +7,9 @@ def caesar_cipher(text: str, shift: int) -> str:
     for char in text:
         # check if the character is an alphabet letter
         if char.isalpha():
+            # determine the unicode offset based on whether the letter is uppercase or lowercase
             unicode_offset = 65 if char.isupper() else 97
-
+            # encrypt the letter
             encrypted_char = chr((ord(char) + shift - unicode_offset) % 26 + unicode_offset)
 
             result += encrypted_char
