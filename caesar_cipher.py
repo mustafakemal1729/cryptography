@@ -9,9 +9,7 @@ def caesar_cipher(text: str, shift: int) -> str:
         if char.isalpha():
             unicode_offset = 65 if char.isupper() else 97
 
-            encrypted_char = chr(
-                (ord(char) + shift - unicode_offset) % 26 + unicode_offset
-            )
+            encrypted_char = chr((ord(char) + shift - unicode_offset) % 26 + unicode_offset)
 
             result += encrypted_char
         else:
