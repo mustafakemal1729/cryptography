@@ -18,9 +18,7 @@ def rot13(text):
             # determine the unicode offset based on whether the letter is uppercase or lowercase
             unicode_offset = 65 if char.isupper() else 97
             # encrypt the letter
-            encrypted_letter = chr(
-                (ord(char) + 13 - unicode_offset) % 26 + unicode_offset
-            )
+            encrypted_letter = chr((ord(char) + 13 - unicode_offset) % 26 + unicode_offset)
             # append it to result
             result += encrypted_letter
         else:
