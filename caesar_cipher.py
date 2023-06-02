@@ -4,7 +4,6 @@ def caesar_cipher(text: str, shift: int):
 
     :param text: The text to encrypt.
     :param shift: The number of positions to shift each letter by.
-    :return: The encrypted text.
     """
     if not isinstance(text, str):
         raise ValueError("text must be a string")
