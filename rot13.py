@@ -1,7 +1,6 @@
 def rot13(text):
     """
     Encrypts the given text using the ROT13 cipher.
-
     :param text: The text to encrypt.
     """
 
